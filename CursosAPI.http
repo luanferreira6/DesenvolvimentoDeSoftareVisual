@@ -1,0 +1,14 @@
+@CursosAPI_HostAddress = http://localhost:5179
+
+### Cadastrar Curso (POST)
+POST {{CursosAPI_HostAddress}}/api/cursos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Desenvolvimento de Sistemas",
+  "cargaHoraria": 160
+}
+
+### Consultar Cursos (GET)
+GET {{CursosAPI_HostAddress}}/api/cursos
